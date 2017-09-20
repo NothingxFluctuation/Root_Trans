@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="{% static "artfeeds/favicon.png" %}">
+  <title>Search -- TRANSICLES</title>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="{% static "artfeeds/main.css" %}">
+</head>
+<body>
+<!-- Start of header -->
+<img src="{% static "artfeeds/transicles-logo.png" %}" id="transicles-logo" alt="TRANSICLES Logo">
+<br/>
+<ul class="nav">
+  <li class="nav-items"><a href="/" class="nav-links">Top Ten</a></li>
+  <li class="nav-items"><a href="/artfeeds/urlshort/" class="nav-links">Url Shortener</a></li>
+  <li class="nav-items"><a href="/artfeeds/newsletter/" class="nav-links">Newsletter</a></li>
+  <li class="nav-items"><a href="/artfeeds/contact/" class="nav-links">Contact</a></li>
+</ul>
+<br/>
+<!-- End of header -->
+
+
+
+
+
+<!-- Start of Search -->
+<div class="content">
+  <!-- Content headline -->
+<div class="content-headline-area">
+  <h2 class="content-headline">Search</h2>
+</div>
+<!-- Search area -->
+<div class="search-area">
+  <form class="search-form">
+    <input type="text" name="search" value="" class="search-text-input" placeholder="Search for articles...">
+    <input type="submit" name="submit" value="Search" class="search-submit-input">
+  </form>
+</div>
+<!-- Search results -->
+<!-- It'll stay invisible unless client search for something. -->
+<div class="search-results-area">
+  <h1 class="search-results-heading">Search results</h1>
+  <ul class="search-results-list">
+    <li><a href="#" class="search-results-links">Much Ado About Nothing</a></li>
+    <li><a href="#" class="search-results-links">12 things you probably don't know about the Marvel's "Thor Ragnarok"</a></li>
+    <li><a href="#" class="search-results-links">Spirituality</a></li>
+    <li><a href="#" class="search-results-links">12 facts about Google, you may not know</a></li>
+    <li><a href="#" class="search-results-links">Top 10 universities in pakistan</a></li>
+    <li><a href="#" class="search-results-links">Spirit and soul</a></li>
+    <li><a href="#" class="search-results-links">How to become less bakchod in front of a girl</a></li>
+  </ul>
+</div>
+<!-- Rocommended links -->
+<!-- Show trending article links here like 6 to 8 items -->
+<div class="recommended-links-area">
+  <h1 class="recommended-links-heading">Recommended links</h1>
+  <ul class="recommended-links-list">
+    <li><a href="#" class="recommended-links-links">Much Ado About Nothing</a></li>
+    <li><a href="#" class="recommended-links-links">12 things you probably don't know about the Marvel's "Thor Ragnarok"</a></li>
+    <li><a href="#" class="recommended-links-links">Spirituality</a></li>
+    <li><a href="#" class="recommended-links-links">12 facts about Google, you may not know</a></li>
+    <li><a href="#" class="recommended-links-links">Top 10 universities in pakistan</a></li>
+    <li><a href="#" class="recommended-links-links">Spirit and soul</a></li>
+    <li><a href="#" class="recommended-links-links">How to become less bakchod in front of a girl</a></li>
+  </ul>
+</div>
+</div>
+<br>
+<!-- End of search -->
+
+
+
+
+
+<!-- Start of footer -->
+<div class="footer">
+  <ul>
+    <li class="footer-items"><a href="/artfeeds/privacy/" class="footer-links">Privacy policy</a></li>
+    <li class="footer-items"><a href="/artfeeds/terms/" class="footer-links">Terms of use</a></li>
+    <li class="footer-items"><a href="/artfeeds/newsletter/" class="footer-links">Subscribe for newsletter</a></li>
+    <li class="footer-items"><a href="/artfeeds/contact/" class="footer-links">Contact us</a></li>
+  </ul>
+    <h3 id="footer-copyrights">&copy; 2017 TRANSICLES. All rights reserved.</h3>
+</div>
+<!-- End of footer -->
+  </body>
+</html>

@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="{% static "artfeeds/favicon.png" %}">
+  <title>Search -- TRANSICLES</title>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="{% static "artfeeds/main.css" %}">
+</head>
+<body>
+<!-- Start of header -->
+<img src="{% static "artfeeds/transicles-logo.png" %}" id="transicles-logo" alt="TRANSICLES Logo">
+<br/>
+<ul class="nav">
+  <li class="nav-items"><a href="/" class="nav-links">Top Ten</a></li>
+  <li class="nav-items"><a href="/artfeeds/urlshort/" class="nav-links">Url Shortener</a></li>
+  <li class="nav-items"><a href="/artfeeds/newsletter/" class="nav-links">Newsletter</a></li>
+  <li class="nav-items"><a href="/artfeeds/contact/" class="nav-links">Contact</a></li>
+</ul>
+<br/>
+<!-- End of header -->
+
+
+
+
+
+<!-- Start of Search -->
+<div class="content">
+  <!-- Content headline -->
+<div class="content-headline-area">
+  <h2 class="content-headline">Shorten a long Url</h2>
+</div>
+<br>
+<br>
+<!-- Search area -->
+<div class="search-area">
+  <form class="search-form" action="/artfeeds/shorty/" method="post">
+  {%csrf_token%}
+    <input type="url" name="q" value="" class="search-text-input" placeholder="Enter a Url here. . ." maxlength="200">
+    <input type="submit" name="submit" value="Shorten" class="search-submit-input">
+  </form>
+</div>
+<!-- Search results -->
+<!-- It'll stay invisible unless client search for something. -->
+
+<!-- Rocommended links -->
+<!-- Show trending article links here like 6 to 8 items -->
+<br>
+<br>
+<br>
+<div class="recommended-links-area">
+  <h1 class="recommended-links-heading">Recommended links</h1>
+  <ul class="recommended-links-list">
+    <li><a href="https://www.techjuice.pk/25-under-25-2017/" class="recommended-links-links">25 under 25</a></li>
+    <li><a href="https://www.techjuice.pk/19-pakistani-startups-that-raised-investment-in-2015/" class="recommended-links-links">Top 22 Pakistani Startups in 2015</a></li>
+    <li><a href="https://www.techinasia.com/pakistan-startup-groopic-funding" class="recommended-links-links">Groopic got investment</a></li>
+    <li><a href="https://propakistani.pk/2017/07/24/pakistan-ranked-fourth-in-freelance-global-market/" class="recommended-links-links">Pakistan ranked fourth in freelance global market</a></li>
+    <li><a href="https://www.dawn.com/news/1209941" class="recommended-links-links">Where does Pakistan stands as India chases Digital dreams</a></li>
+  </ul>
+</div>
+</div>
+<br>
+<!-- End of search -->
+
+
+
+
+
+<!-- Start of footer -->
+<div class="footer">
+  <ul>
+    <li class="footer-items"><a href="/artfeeds/privacy/" class="footer-links">Privacy policy</a></li>
+    <li class="footer-items"><a href="/artfeeds/terms/" class="footer-links">Terms of use</a></li>
+    <li class="footer-items"><a href="/artfeeds/newsletter/" class="footer-links">Subscribe for newsletter</a></li>
+    <li class="footer-items"><a href="/artfeeds/contact/" class="footer-links">Contact us</a></li>
+  </ul>
+    <h3 id="footer-copyrights">&copy; 2017 TRANSICLES. All rights reserved.</h3>
+</div>
+<!-- End of footer -->
+  </body>
+</html>

@@ -1,0 +1,309 @@
+/*** Styling for all elements ***/
+* {
+  font-family: 'Encode Sans', sans-serif;
+  color: #3a3a3c;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f9f9f9;
+}
+/*** End ***/
+
+
+
+
+
+
+/*** Start styling header ***/
+img#transicles-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+ul.nav{
+  background-color: white;
+  border:1px solid lightgrey;
+  border-width:1px 0;
+  list-style:none;
+  text-align:center;
+}
+li.nav-items{
+  display:inline;
+}
+a.nav-links{
+  background-color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.63px;
+  display:inline-block;
+  padding:12px 36px;
+  text-transform: uppercase;
+}
+a.nav-links:hover, a.nav-links:active{
+  color: #3694c7;
+}
+/*** End ***/
+
+
+
+
+
+
+/*** Start styling articles area ***/
+div.content {
+  background-color: white;
+  margin: auto;
+  width: 800px;
+  border-radius: 2px;
+}
+div.content-headline-area {
+  border-bottom: 1px solid lightgrey;
+  box-shadow: 0px 1px 1px lightgrey;
+}
+h2.content-headline {
+  text-align: center;
+  padding: 10px 0px;
+  text-transform: uppercase;
+  opacity: 0.6;
+  cursor: default;
+  font-weight: lighter;
+}
+div.articles {
+  border-bottom: 1px solid lightgrey;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+h1.articles-headline {
+  text-align: center;
+  padding: 10px 0px;
+  text-transform: justify;
+}
+a.articles-link {
+  text-decoration: none;
+}
+a.articles-link:hover {
+  cursor: pointer;
+  color: #3694c7;
+  text-decoration: underline;
+}
+img.articles-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 750px;
+}
+h4.articles-info {
+  margin-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: lighter;
+  font-size: 16px;
+  letter-spacing: 1.63px;
+  text-transform: justify;
+  opacity: 0.8;
+}
+a.articles-author {
+  text-decoration: none;
+  font-weight: bold;
+  color: #3694c7;
+}
+span#articles-published-date {
+  font-weight: bold;
+}
+.wrapper {
+    text-align: center;
+}
+.load-more {
+    padding: 10px;
+    background-color: white;
+    border:2px solid lightgrey;
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.63px;
+}
+.load-more:hover {
+  color: #3694c7;
+  cursor: pointer;
+}
+/*** End ***/
+
+
+
+
+
+
+
+
+
+
+
+/*** Start of search, newsletter and contact ***/
+div.search-area, div.newsletter-area, div.contact-area {
+  border-bottom: 1px solid lightgrey;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* heading for newsletter and contact form */
+h4.content-headline {
+  text-align: left;
+  padding: 5px 50px 15px 60px;
+  text-transform: justify;
+  opacity: 0.9;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 1.63px;
+}
+form.search-form, form.newsletter-form, form.contact-form {
+  padding: 0px 50px;
+}
+input.search-text-input, input.newsletter-text-input, input.contact-text-input {
+  height: 38px;
+  width: 500px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.63px;
+}
+/* Changing width of input fields for contact form */
+input.contact-text-input {
+  width: 700px;
+}
+input.search-text-input:hover, input.search-text-input:focus, input.newsletter-text-input:hover, input.newsletter-text-input:focus, input.contact-text-input:hover, input.contact-text-input:focus {
+  border: 1px solid #3694c7;
+}
+input[type=submit] {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.63px;
+  height: 38px;
+  width: 150px;
+  padding: 6px 10px;
+  color: white;
+  background-color: #3694c7;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+div.search-results-area, div.recommended-links-area {
+  border-bottom: 1px solid lightgrey;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+h1.search-results-heading, h1.recommended-links-heading {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  opacity: 0.9;
+  font-weight: lighter;
+}
+ul.search-results-list, ul.recommended-links-list {
+  padding:10px 100px;
+  list-style-type: circle;
+}
+a.search-results-links, a.recommended-links-links {
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 1.63px;
+  color: #3694c7;
+  padding:10px 10px;
+  text-decoration: none;
+}
+a.search-results-links:hover,a.recommended-links-links:hover {
+  color: #3a3a3c;
+}
+/*** End ***/
+
+
+/*** Styling show article ***/
+h2.content-headline-forarticles {
+  text-align: center;
+  padding: 10px 0px;
+  text-transform: justify;
+  opacity: 0.6;
+  cursor: default;
+  font-weight: bold;
+}
+div.articles-content-area {
+  margin: 20px;
+}
+p#articles-content {
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 1.63px;
+}
+
+/*** End ***/
+
+
+
+/*** Privacy and terms styling ***/
+div.terms, div.privacy {
+  margin: 20px;
+  background-color: lightyellow;
+}
+p#terms-of-use, p#privacy-policy {
+  font-size: 14px;
+  font-weight: lighter;
+  letter-spacing: 1.63px;
+}
+
+/*** End ***/
+
+
+
+
+/*** Styling footer ***/
+div.footer {
+  text-align:center;
+  background-color: #3a3a3c;
+  height: 100px;
+  padding-top: 10px;
+}
+li.footer-items {
+  display:inline;
+  color: #d8d9d8;
+  font-weight: bold;
+  letter-spacing: 1.63px;
+  padding:10px 20px;
+}
+a.footer-links{
+  color: #d8d9d8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.63px;
+  display:inline-block;
+  padding:0px 10px 20px 10px;
+  text-transform: justify;
+}
+a.footer-links:hover {
+  text-decoration: underline;
+}
+div.social-links {
+  display: inline;
+  position: relative;
+  top: 7px;
+}
+img#facebook-icon {
+  height: 30px;
+  width: 30px;
+}
+h3#footer-copyrights {
+  color: #d8d9d8;
+  letter-spacing: 0.5px;
+  padding-top: 20px;
+  font-weight: lighter;
+  text-transform: justify;
+  opacity: 0.75;
+}
+/*** End ***/

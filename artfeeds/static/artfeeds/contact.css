@@ -1,0 +1,156 @@
+* {
+  font-family: 'Encode Sans', sans-serif;
+  color: #3a3a3c;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fafafa;
+}
+
+
+
+/*** Start styling header ***/
+#transicles-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nav{
+  background-color: white;
+  border:1px solid lightgrey;
+  border-width:1px 0;
+  list-style:none;
+  text-align:center;
+}
+.nav-items{
+  display:inline;
+}
+.nav-links{
+  background-color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.63px;
+  display:inline-block;
+  padding:12px 36px;
+  text-transform: uppercase;
+}
+.nav-links:hover, .nav-links:active{
+  color: #3694c7;
+}
+/*** End ***/
+
+
+
+
+
+
+
+.content {
+  background-color: white;
+  margin: auto;
+  width: 800px;
+  border-radius: 2px;
+}
+.search-area {
+  border-bottom: 1px solid lightgrey;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+div.contentheading {
+  border-bottom: 2px solid red;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+#heading {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.search-form {
+  padding: 0px 50px;
+}
+input[type=text] {
+  height: 38px;
+  width: 500px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.63px;
+}
+input[type=submit] {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.63px;
+  height: 38px;
+  width: 150px;
+  padding: 6px 10px;
+  color: white;
+  background-color: #3694c7;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+.recommended-links {
+  border-bottom: 1px solid lightgrey;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.recommended-links ul {
+  padding:10px 50px;
+}
+.recommended-links ul li a {
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 1.63px;
+  color: #3694c7;
+  padding:10px 10px;
+}
+.recommended-links ul li a:hover {
+  color: #3a3a3c;
+}
+
+.footer {
+  text-align:center;
+  background-color: #3a3a3c;
+  height: 120px;
+  padding-top: 30px;
+}
+.footer li{
+  display:inline;
+  color: #d8d9d8;
+  font-weight: bold;
+  letter-spacing: 1.63px;
+  padding:10px 10px;
+}
+.footer h3 {
+  color: #d8d9d8;
+  letter-spacing: 1.63px;
+  padding-top: 20px;
+  font-weight: bold;
+  text-transform: justify;
+}
+.footer a{
+  color: #d8d9d8;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1.63px;
+  display:inline-block;
+  padding:0px 10px 20px 10px;
+  text-transform: justify;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+#fb-logo {
+  height: 30px;
+  width: 30px;
+}

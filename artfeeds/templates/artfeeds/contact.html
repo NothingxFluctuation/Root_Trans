@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="{% static "favicon.png" %}">
+  <title>Contact -- TRANSICLES</title>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'artfeeds/main.css' %}">
+</head>
+<body>
+<!-- Start of header -->
+<img src="{% static "artfeeds/transicles-logo.png" %}" id="transicles-logo" alt="TRANSICLES Logo">
+<br/>
+<ul class="nav">
+  <li class="nav-items"><a href="/" class="nav-links">Top Ten</a></li>
+  <li class="nav-items"><a href="/artfeeds/urlshort/" class="nav-links">Url Shortener</a></li>
+  <li class="nav-items"><a href="/artfeeds/newsletter/" class="nav-links">Newsletter</a></li>
+  <li class="nav-items"><a href="/artfeeds/contact/" class="nav-links">Contact</a></li>
+</ul>
+<br/>
+<!-- End of header -->
+
+
+
+
+<!-- Start of Contact -->
+<div class="content">
+  <!-- Content headline -->
+<div class="content-headline-area">
+  <h2 class="content-headline">Contact</h2>
+</div>
+<!-- Contact area -->
+<div class="contact-area">
+  <h4 class="content-headline">Hi there! <br><br>Here you can send us a message, suggest new ideas and features, or simply say hello.</h4>
+  <form class="contact-form">
+    <input type="text" name="name" value="" class="contact-text-input" placeholder="Your name" maxlength="25"><br><br>
+    <input type="email" name="email" value="" class="contact-text-input" placeholder="Your email address" maxlength="25"><br><br>
+    <input type="text" name="message" value="" class="contact-text-input" placeholder="Type your message here..." maxlength="100"><br><br>
+    <input type="submit" name="submit" value="Send" class="contact-submit-input">
+  </form>
+</div>
+</div>
+<br>
+<!-- End of Contact -->
+
+
+
+
+<!-- Start of footer -->
+<div class="footer">
+  <ul>
+    <li class="footer-items"><a href="/artfeeds/privacy/" class="footer-links">Privacy policy</a></li>
+    <li class="footer-items"><a href="/artfeeds/terms/" class="footer-links">Terms of use</a></li>
+    <li class="footer-items"><a href="/artfeeds/newsletter/" class="footer-links">Subscribe for newsletter</a></li>
+    <li class="footer-items"><a href="/artfeeds/contact/" class="footer-links">Contact us</a></li>
+  </ul>
+    <h3 id="footer-copyrights">&copy; 2017 TRANSICLES. All rights reserved.</h3>
+</div>
+<!-- End of footer -->
+
+
+
+  </body>
+</html>

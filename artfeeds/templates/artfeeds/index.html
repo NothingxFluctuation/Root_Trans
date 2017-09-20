@@ -1,0 +1,111 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <link rel="icon" type="image/png" href="{%static "artfeeds/favicon.png" %}">
+  <title>TRANSICLES</title>
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static 'artfeeds/main.css' %}" />
+</head>
+<body>
+<!-- Start of header -->
+<img src="{% static "artfeeds/transicles-logo.png" %}" id="transicles-logo" alt="TRANSICLES Logo">
+<br/>
+<ul class="nav">
+  <li class="nav-items"><a href="/" class="nav-links">Top Ten</a></li>
+  <li class="nav-items"><a href="/artfeeds/urlshort/" class="nav-links">Url Shortener</a></li>
+  <li class="nav-items"><a href="/artfeeds/newsletter/" class="nav-links">Newsletter</a></li>
+  <li class="nav-items"><a href="/artfeeds/contact/" class="nav-links">Contact</a></li>
+</ul>
+<br/>
+<!-- End of header -->
+
+
+
+
+<!-- Start of articles -->
+<!-- Use mysql database or use online storage for images to show in "articles-images" -->
+<div class="content">
+<div class="content-headline-area">
+  <h2 class="content-headline">Top Ten from Net</h2>
+</div>
+<!-- for loop to load recent 10 to 12 articles -->
+<div class="articles">
+  <h1 class="articles-headline"><a href="https://www.howtogeek.com/326742/ccleaner-was-hacked-what-you-need-to-know/" class="articles-link">CCleaner was hacked: Here's what to do</a></h1>
+  <img src="{% static "artfeeds/images/ccleaner.jpg" %}" class="articles-image" alt="">
+  <h4 class="articles-info">Source: <a href="https://www.howtogeek.com/326742/ccleaner-was-hacked-what-you-need-to-know/" class="articles-author">https://www.howtogeek.com/326742/ccleaner-was-hacked-what-you-need-to-know/</a></h4>
+</div>
+<!-- endfor loop -->
+<div class="articles">
+  <h1 class="articles-headline"><a href="https://www.techjuice.pk/pakistani-developed-anti-blue-whale-app/" class="articles-link">A Pakistani has devloped an anti-Blue Whale app</a></h1>
+  <img src="{% static "artfeeds/images/bluewhale.jpg" %}" class="articles-image" alt="">
+  <h4 class="articles-info">Source: <a href="https://www.techjuice.pk/pakistani-developed-anti-blue-whale-app/" class="articles-author">https://www.techjuice.pk/pakistani-developed-anti-blue-whale-app/</a></h4>
+</div>
+<div class="articles">
+  <h1 class="articles-headline"><a href="https://thenextweb.com/apple/2017/09/19/the-best-new-features-in-ios-11/#.tnw_RHhuSha7" class="articles-link">The best new features in iOS 11</a></h1>
+  <img src="{% static "artfeeds/images/ios11.jpg" %}" class="articles-image" alt="">
+  <h4 class="articles-info">Source: <a href="https://thenextweb.com/apple/2017/09/19/the-best-new-features-in-ios-11/#.tnw_RHhuSha7" class="articles-author">https://thenextweb.com/apple/2017/09/19/the-best-new-features-in-ios-11/#.tnw_RHhuSha7</a></h4>
+</div>
+<div class="articles">
+  <h1 class="articles-headline"><a href="http://www.firstpost.com/tech/news-analysis/the-surface-environment-on-mars-supported-liquid-water-3-5-billion-years-ago-study-4060211.html" class="articles-link">The surface environment on Mars supported liquid water 3.5 billion years ago</a></h1>
+  <img src="{% static "artfeeds/images/mars.jpg" %}" class="articles-image" alt="">
+  <h4 class="articles-info">Source: <a href="http://www.firstpost.com/tech/news-analysis/the-surface-environment-on-mars-supported-liquid-water-3-5-billion-years-ago-study-4060211.html" class="articles-author">http://www.firstpost.com/tech/news-analysis/the-surface-environment-on-mars-supported-liquid-water-3-5-billion-years-ago-study-4060211.html</a></h4>
+</div>
+<div class="articles">
+  <h1 class="articles-headline"><a href="https://gizmodo.com/a-big-leak-just-revealed-googles-4-most-important-devic-1818558654" class="articles-link">A Big Leak Just Revealed Google's 4 Most Important Devices 2 Weeks Early</a></h1>
+  <img src="{% static "artfeeds/images/googlephone.jpg" %}" class="articles-image" alt="">
+  <h4 class="articles-info">Source: <a href="https://gizmodo.com/a-big-leak-just-revealed-googles-4-most-important-devic-1818558654" class="articles-author">https://gizmodo.com/a-big-leak-just-revealed-googles-4-most-important-devic-1818558654</a></h4>
+</div>
+<div class="articles">
+  <h1 class="articles-headline"><a href="https://www.cnet.com/products/apple-iphone-8-plus/review/" class="articles-link">iPhone 8 Plus review</a></h1>
+  <img src="{% static "artfeeds/images/iphone8.png" %}" class="articles-image" alt="">
+  <h4 class="articles-info">Source: <a href="https://www.cnet.com/products/apple-iphone-8-plus/review/" class="articles-author">https://www.cnet.com/products/apple-iphone-8-plus/review/</a></h4>
+</div>
+<div class="articles">
+  <h1 class="articles-headline"><a href="http://mashable.com/2017/09/19/google-pixelbook-chromebook-leak/?utm_cid=hp-r-2#UvnwMYWSt8q3" class="articles-link">Google's about to launch a pricey new 'Pixelbook' with a pressure-sensitive stylus</a></h1>
+  <img src="{% static "artfeeds/images/stylus.jpg" %}" class="articles-image" alt="">
+  <h4 class="articles-info">Source: <a href="http://mashable.com/2017/09/19/google-pixelbook-chromebook-leak/?utm_cid=hp-r-2#UvnwMYWSt8q3" class="articles-author">http://mashable.com/2017/09/19/google-pixelbook-chromebook-leak/?utm_cid=hp-r-2#UvnwMYWSt8q3</a></h4>
+</div>
+<div class="articles">
+  <h1 class="articles-headline"><a href="https://www.hackreactor.com/blog/no-cs-degree-programmer-engineer" class="articles-link">Getting Job without CS/SE Degree</a></h1>
+  <img src="{% static "artfeeds/images/coder.jpg" %}" class="articles-image" alt="">
+  <h4 class="articles-info">Source: <a href="https://www.hackreactor.com/blog/no-cs-degree-programmer-engineer" class="articles-author">https://www.hackreactor.com/blog/no-cs-degree-programmer-engineer</a></h4>
+</div>
+<div class="articles">
+  <h1 class="articles-headline"><a href="https://www.techjuice.pk/huawei-makes-fun-apple-face-id/" class="articles-link">Huawei Makes fun of Apple Face ID</a></h1>
+  <img src="{% static "artfeeds/images/huawei.png" %}" class="articles-image" alt="">
+  <h4 class="articles-info">Source: <a href="https://www.techjuice.pk/huawei-makes-fun-apple-face-id/" class="articles-author">https://www.techjuice.pk/huawei-makes-fun-apple-face-id/</a></h4>
+</div>
+<div class="articles">
+  <h1 class="articles-headline"><a href="https://www.techjuice.pk/railway-tickets-online-jazz-cash/" class="articles-link">You can now buy railway tickets through JazzCash</a></h1>
+  <img src="{% static "artfeeds/images/train.jpg" %}" class="articles-image" alt="">
+  <h4 class="articles-info">Source: <a href="https://www.techjuice.pk/railway-tickets-online-jazz-cash/" class="articles-author">https://www.techjuice.pk/railway-tickets-online-jazz-cash/</a></h4>
+</div>
+</div>
+<br>
+<br>
+<!-- End of articles -->
+
+
+
+
+
+<!-- Start of footer -->
+<div class="footer">
+  <ul>
+    <li class="footer-items"><a href="/artfeeds/privacy/" class="footer-links">Privacy policy</a></li>
+    <li class="footer-items"><a href="/artfeeds/terms/" class="footer-links">Terms of use</a></li>
+    <li class="footer-items"><a href="/artfeeds/newsletter/" class="footer-links">Subscribe for newsletter</a></li>
+    <li class="footer-items"><a href="/artfeeds/contact/" class="footer-links">Contact us</a></li>
+  </ul>
+    <h3 id="footer-copyrights">&copy; 2017 TRANSICLES. All rights reserved.</h3>
+</div>
+<!-- End of footer -->
+
+
+  </body>
+</html>
